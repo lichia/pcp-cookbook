@@ -83,4 +83,4 @@ yum install pcp pcp-libs pcp-webapi pcp-conf
 
 # Author
 
-Author:: Daniel Zabel (<daniel.zabel@coremedia.com>)
+Author: Daniel Zabel (<daniel.zabel@coremedia.com>)
