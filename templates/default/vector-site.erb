@@ -1,0 +1,14 @@
+server {
+listen 80;
+
+access_log /var/log/nginx/vector.access.log;
+server_name <%= node['pcp']['nginx']['fqdn'] %>;
+location / {
+root <%= node['pcp']['vector']['nginx_path'] %>;
+autoindex on;
+autoindex_exact_size on;
+}
+
+}
+
+

@@ -1,0 +1,14 @@
+*~
+.vagrant/
+.idea/
+*.iml
+.kitchen/
+.kitchen.local.yml*
+.rakeTasks
+.bundle
+/bin
+/vendor
+Berksfile.lock
+build
+berks-cookbooks
+eval
