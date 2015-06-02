@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# It is highly recommended to use the same versions as provided by chef-dk (0.3.5)
+# It is highly recommended to use the same versions as provided by chef-dk
 gem 'berkshelf', '~> 3.2'
 gem 'chef', '~> 12'
 gem 'chefspec', '~> 4.2'
