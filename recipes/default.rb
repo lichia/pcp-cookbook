@@ -6,7 +6,7 @@ This recipe installs coremedia pcp repo and default pcp packages.
 
 yum_repository 'pcp' do
   description 'PCP Packages Linux 6 - $basearch'
-  baseurl "#{node['pcp']['yum']['baseurl']}"
+  baseurl node['pcp']['yum']['baseurl']
   repositoryid 'pcp'
   enabled true
   gpgcheck false

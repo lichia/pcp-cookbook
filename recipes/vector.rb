@@ -10,8 +10,8 @@ node.set['nginx']['port'] = 80
 node.set['nginx']['default_root'] = node['pcp']['vector']['nginx_path']
 
 template "#{node['nginx']['dir']}/sites-available/vector" do
-  source "#{node['pcp']['nginx']['template']}"
-  cookbook "#{node['pcp']['nginx']['template_cookbook']}"
+  source node['pcp']['nginx']['template']
+  cookbook node['pcp']['nginx']['template_cookbook']
   notifies :reload, 'service[nginx]' if ::File.exist?(::File.join(node['nginx']['dir'], 'sites-enabled', 'vector'))
 end
 
@@ -41,6 +41,3 @@ execute 'extract_vector' do
   action :nothing
   notifies :reload, 'service[nginx]', :delayed
 end
-
-
-
