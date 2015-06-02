@@ -71,7 +71,7 @@ yum install pcp pcp-libs pcp-webapi pcp-conf
 * `node['pcp']['nginx']['template']` - Defaults to `vector-site.erb`
 * `node['pcp']['nginx']['template_cookbook']` - Defaults to `pcp`
 * `node['pcp']['nginx']['fqdn']` - Defaults to `vector.coremedia.com`
-* `node['pcp']['yum']['baseurl']` - Default to `http://mirror.coremedia.vm/pcp/el/6/$basearch`
+* `node['pcp']['yum']['baseurl']` - Default to `http://mirror.coremedia.vm/pcp/el/6/x86_64`
 
 # Recipes
 
